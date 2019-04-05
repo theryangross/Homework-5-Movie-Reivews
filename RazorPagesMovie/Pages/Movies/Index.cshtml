@@ -39,6 +39,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Movie[0].Rating)
             </th>
+             <th>
+                @Html.DisplayNameFor(model => model.Movie[0].Reviews)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -59,6 +62,20 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Rating)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Reviews)
+                foreach(var score in item.Reviews)
+                {
+                    try
+                    {
+                        <li>Movie average = context.Movie.Average(Reviews).First()</li>;
+                    }
+                    catch
+                    {
+                        <li>N/A</li>
+                    }
+                }
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |

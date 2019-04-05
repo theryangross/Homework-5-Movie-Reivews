@@ -32,7 +32,7 @@ namespace RazorPagesMovie.Models
 
                     new Movie
                     {
-                        Title = "Ghostbusters ",
+                        Title = "Ghostbusters",
                         ReleaseDate = DateTime.Parse("1984-3-13"),
                         Genre = "Comedy",
                         Price = 8.99M,
