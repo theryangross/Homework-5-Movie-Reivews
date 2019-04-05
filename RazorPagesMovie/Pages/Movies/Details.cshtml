@@ -41,16 +41,15 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Movie.Rating)
         </dd>
+        @foreach (var review in Model.Movie.Review)
+        {
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Movie.Reviews)
+            @Html.DisplayNameFor(model => model.Movie.Score)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Movie.Reviews)
-            @foreach (var review in @Model.Movie.Reviews)
-            {
-                <li>@review</li>
-            }
+            @Html.DisplayFor(model => model.Movie.Score)
         </dd>
+        }
     </dl>
 </div>
 <div>

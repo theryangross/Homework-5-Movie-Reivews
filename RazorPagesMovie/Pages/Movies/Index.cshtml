@@ -1,4 +1,4 @@
-@page
+@page "{searchString?}"
 @model RazorPagesMovie.Pages.Movies.IndexModel
 
 @{
@@ -12,10 +12,10 @@
 </p>
 
 <form>
+    <p>
     <select asp-for="MovieGenre" asp-items="Model.Genres">
         <option value="">All</option>
     </select>
-    <p>
         Title: <input type="text" asp-for="SearchString" />
         <input type="submit" value="Filter" />
     </p>
@@ -42,7 +42,7 @@
              <th>
                 @Html.DisplayNameFor(model => model.Movie[0].Reviews)
             </th>
-            <th></th>
+    
         </tr>
     </thead>
     <tbody>
@@ -64,18 +64,8 @@
                 @Html.DisplayFor(modelItem => item.Rating)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Reviews)
-                foreach(var score in item.Reviews)
-                {
-                    try
-                    {
-                        <li>Movie average = context.Movie.Average(Reviews).First()</li>;
-                    }
-                    catch
-                    {
-                        <li>N/A</li>
-                    }
-                }
+                @item.Reviews.Average(r => r.Score)
+                
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
