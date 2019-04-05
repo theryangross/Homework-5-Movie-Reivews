@@ -33,3 +33,4 @@
 /Users/ryangross/Desktop/College/Junior Spring/Advanced Business Programming/Homework/Homework 4/RazorPagesMovie/obj/Debug/netcoreapp2.2/Razor/Pages/Movies/Details.g.cshtml.cs
 /Users/ryangross/Desktop/College/Junior Spring/Advanced Business Programming/Homework/Homework 4/RazorPagesMovie/obj/Debug/netcoreapp2.2/Razor/Pages/Movies/Edit.g.cshtml.cs
 /Users/ryangross/Desktop/College/Junior Spring/Advanced Business Programming/Homework/Homework 4/RazorPagesMovie/obj/Debug/netcoreapp2.2/Razor/Pages/Movies/Index.g.cshtml.cs
+/Users/ryangross/Desktop/College/Junior Spring/Advanced Business Programming/Homework/Homework 4/RazorPagesMovie/obj/Debug/netcoreapp2.2/Razor/Pages/Movies/Review.g.cshtml.cs
